@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" readonly />
+      <div class="btn-container">
+        <div class="buttons orange" onclick="clearData()">AC</div>
+        <div class="buttons orange" onclick="clearDigit()">DEL</div>
+        <div class="buttons orange" onclick="showValue('%')">%</div>
+        <div class="buttons orange" onclick="showValue('/')">/</div>
+        <div class="buttons" onclick="showValue(7)">7</div>
+        <div class="buttons" onclick="showValue(8)">8</div>
+        <div class="buttons" onclick="showValue(9)">9</div>
+        <div class="buttons orange" onclick="showValue('*')">*</div>
+        <div class="buttons" onclick="showValue(4)">4</div>
+        <div class="buttons" onclick="showValue(5)">5</div>
+        <div class="buttons" onclick="showValue(6)">6</div>
+        <div class="buttons orange" onclick="showValue('-')">-</div>
+        <div class="buttons" onclick="showValue(1)">1</div>
+        <div class="buttons" onclick="showValue(2)">2</div>
+        <div class="buttons" onclick="showValue(3)">3</div>
+        <div class="buttons orange" onclick="showValue('+')">+</div>
+        <div class="buttons" onclick="showValue(0)">0</div>
+        <div class="buttons" onclick="showValue('.')">.</div>
+        <div class="buttons orange" id="equal" onclick="calculate()">=</div>
+      </div>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
